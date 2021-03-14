@@ -1,0 +1,26 @@
+* { margin: 0; padding: 0; font-family: Arial; box-sizing: border-box; }
+main { height: 100%; width: 100%; position: absolute;
+    display: flex; justify-content: center; align-items: center;
+    background-image: linear-gradient(-45deg, black, #1a1a1a); }
+
+div.display {
+    width: 209px; height: 103px; font-size: 30px; color: #00ff00;
+    border-style: solid; border-color: #00ff00; border-width: 1px;
+    line-height: 103px; text-align: center;
+}
+div.display span { margin: 0 10px; }
+
+div#botoes {
+    display: grid;
+    grid-template-columns: 53px 53px 53px 53px;
+    grid-template-rows: 53px 53px 53px 53px 53px;
+    grid-gap: 0;
+}
+button {
+    width: 50px; height: 50px; font-size: 20px;
+    border-radius: 0; border-style: solid; border-color: white;
+    border-width: 1px;
+    background-color: transparent; color: white; margin-top: 4px;
+    transition: 200ms; cursor: pointer;
+} button:hover { background-color: white; color: black; }
+button.dobro { height: 103px; }
